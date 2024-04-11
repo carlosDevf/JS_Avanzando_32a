@@ -76,3 +76,24 @@ simpre que nos comprate nuevas apps o bajo apps de node en git necesito instalar
 - proyecto de la presentacion
 
 https://docs.google.com/presentation/d/18Qg3_Cmw3JZW0W1O5HURcJEfFKKI4fv5k168R9WhilQ/edit?usp=sharing
+
+----
+# La extensión de archivo MJS
+
+```
+.mjs
+```
+
+se utiliza para denotar módulos de JavaScript que utilizan la sintaxis de importación y exportación de ES6 (ECMAScript 2015) o superior. El propósito de introducir una distinción entre archivos
+
+```
+.js
+```
+
+y
+
+```
+.mjs
+```
+
+fue proporcionar una manera explícita de indicar al entorno de ejecución de Node.js y a los navegadores, así como a los desarrolladores, que el archivo debe tratarse como un módulo ES.
