@@ -1,3 +1,5 @@
+// objetos que no tienen muchos cambios
+// 
 const vehiculos = [
     {
         "modelo": "F1",

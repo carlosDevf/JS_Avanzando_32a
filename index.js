@@ -1,6 +1,7 @@
 const { suma, multi } = require('./operaciones')
 const { vehiculos } = require('./CONSTANS')
-const os = require('os')
+// NODE 16 conforme el manual
+const os = require('node:os')
 // modulo nativo
 
 console.log(suma(1000, 20))
