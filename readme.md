@@ -1,13 +1,13 @@
-En nodjs tenemos:
+## NODEJS
 
 - modulos locales
     - const nombre = require('ruta_nombre_del_archivo') // commonJS
     - import nombre form 'ruta_nombre_del_archivo_extension' // module > configuracion
 
 - modulos nativos
-    - require o imports
     - son modulos del sistema (os, fs, path, process, http)
-    - no necestan ser instalados ya vienen con node
+    - no necestan ser instalados ya vienen con node, se recomienda el uso del prefijo node:
+    - para importarlos o usarlos se require o imports
 
 - modulos que podemos instalar (NPM)     
     - npm i nombre_de_la_libreria
@@ -18,8 +18,27 @@ En nodjs tenemos:
 
 
 
---- ojo
-Si este proyecto que estas leyendo ya estan en github agregar el archivo .gitignore
+--- 
+### Trabajando con GitHub y nodejs
+
+Para repositorios que estan en github es importante no subir la carpeta de node_modules ya que es muy pesada
+para esto sigue los siguietes pasos: 
+
+    - crear el archivo .gitignore
+    - añade dentro de gitignore las carpetas y archivos que no quieras subir al repo
+    
+        - documentos personales, llaves, certificados, documentos delicados
+        - el node_modules es importante ya que es requerido por los serviodres y lugares donde se vaya a ocupar el proyecto.
+
+### Uso del caret
+    
+Dentro de package.json cuando instalamos una paquete este lleva su version: 
+    ````json
+         "inquirer": "^9.2.17",
+    ````
+
+este caret indica que se debe instalar una version superior si es que la hay
+eliminalo como buena practica para trabajar con versiones absolutas
    
 
 

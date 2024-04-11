@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { suma, multi } = require('./operaciones')
 const { vehiculos } = require('./CONSTANS')
 // NODE 16 conforme el manual
