@@ -49,3 +49,21 @@ Estas deben de instalarse por proyecto
 
 Tiene las librerias que necesita la aplicacion (proyecto, modulo, app) y se instala con npm i 
 simpre que nos comprate nuevas apps o bajo apps de node en git necesito instalar las dependecias y ocupo npm i 
+
+
+## Como crear este proyecto de node para subirlo a github
+
+- git init 
+    para preparalo a github
+
+- Con mi sesion inciada de github
+    - https://github.com/new
+    - crear un nuevo repo
+    - vamos a seguir los pasos que tienen la web al momento de crear un repo        
+        - git add .
+        - git commit -m "first commit"
+        - git branch -M main
+        - git remote add origin https://github.com/carlosDevf/test-repo.git
+        - git push -u origin main
+            - es posibl que te pida tu token de acceso
+- lo demas cambios pueden ser como la herramieta de VSCode

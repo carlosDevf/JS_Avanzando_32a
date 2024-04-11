@@ -1,7 +1,11 @@
+//https://stackoverflow.com/questions/46515764/how-can-i-use-async-await-at-the-top-level
+// agregar dentro del package.json al propiedad de type="module" linea 6 de este proyecto
+// 
+
 import colors from 'picocolors' //nuevo estandar
 import inquerer from 'inquirer'
 
-// Asincrona
+// Asincrona inquerer necesita esperar el dato del usuario
 async function main(){
     console.log(colors.white("Benvenido a mi super app"))
     
