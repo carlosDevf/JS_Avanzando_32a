@@ -1,5 +1,5 @@
 const fs = require('node:fs')
-const path = require('node:path')
+const path = require('node:path') // commonJS
 // file system => sistema operativo
 /// PARA TODA UNA CLASE DESPUES
 /// Sincrona => se resuleven de inmediato

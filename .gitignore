@@ -1,0 +1,3 @@
+// agregar todas las carpetas que no quiero que se suban al github
+
+node_modules
