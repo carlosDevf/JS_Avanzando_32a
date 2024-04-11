@@ -1,99 +1,56 @@
-## NODEJS
+# Apuntes de clase
 
-- modulos locales
-    - const nombre = require('ruta_nombre_del_archivo') // commonJS
-    - import nombre form 'ruta_nombre_del_archivo_extension' // module > configuracion
+### Node.js: Uso de Módulos
 
-- modulos nativos
-    - son modulos del sistema (os, fs, path, process, http)
-    - no necestan ser instalados ya vienen con node, se recomienda el uso del prefijo node:
-    - para importarlos o usarlos se require o imports
+**Módulos Locales**
 
-- modulos que podemos instalar (NPM)     
-    - npm i nombre_de_la_libreria
-        - se va a crear la carpeta node_modules
-        - se va agregar al package.json la seccion de dependecias
-    - npm install nombre_de_la_libreria
-    - npm install -g nodemon // instalar una libreria de forma global
+Para utilizar módulos locales en Node.js, disponemos de dos enfoques principales dependiendo del sistema de módulos:
 
+- Con CommonJS: `const nombre = require('ruta_del_archivo')`
+- Usando módulos ES (necesario configurar en `package.json`): `import nombre from 'ruta_del_archivo_con_extensión'`
 
+**Módulos Nativos**
 
---- 
-### Trabajando con GitHub y nodejs
+Node.js viene equipado con una serie de módulos nativos (por ejemplo, `os`, `fs`, `path`, `process`, `http`), que están listos para usarse sin necesidad de instalación previa. Para importarlos eficientemente, es recomendable emplear el prefijo `node:` al requerirlos o importarlos, mejorando la claridad del código.
 
-Para repositorios que estan en github es importante no subir la carpeta de node_modules ya que es muy pesada
-para esto sigue los siguietes pasos: 
+**Módulos de NPM**
 
-    - crear el archivo .gitignore
-    - añade dentro de gitignore las carpetas y archivos que no quieras subir al repo
-    
-        - documentos personales, llaves, certificados, documentos delicados
-        - el node_modules es importante ya que es requerido por los serviodres y lugares donde se vaya a ocupar el proyecto.
+La instalación de módulos externos se facilita mediante el comando `npm i nombre_de_la_libreria`, lo cual:
 
-### Uso del caret
-    
-Dentro de package.json cuando instalamos una paquete este lleva su version: 
-    ````json
-         "inquirer": "^9.2.17",
-    ````
+- Crea la carpeta `node_modules`.
+- Agrega la sección de dependencias en `package.json`.
+- Para instalaciones globales, se utiliza `npm install -g nombre_de_la_libreria`.
 
-este caret indica que se debe instalar una version superior si es que la hay
-eliminalo como buena practica para trabajar con versiones absolutas
-   
-### instalar dependecias
+**Trabajando con GitHub y Node.js**
 
-Estas deben de instalarse por proyecto 
+Es crucial evitar subir la carpeta `node_modules` a repositorios de GitHub debido a su tamaño. Para ello:
 
+1. Crea un archivo `.gitignore`.
+2. Especifica las carpetas y archivos a omitir, como documentos personales o `node_modules`.
 
-### Carpeta node_modules
+**Uso del Caret en `package.json`**
 
-Tiene las librerias que necesita la aplicacion (proyecto, modulo, app) y se instala con npm i 
-simpre que nos comprate nuevas apps o bajo apps de node en git necesito instalar las dependecias y ocupo npm i 
+Al instalar un paquete, verás una notación como `"inquirer": "^9.2.17"`. El símbolo `^` indica la aceptación de versiones superiores del paquete. Para mayor control, se recomienda eliminarlo y trabajar con versiones específicas.
 
+**Instalación de Dependencias**
 
-## Como crear este proyecto de node para subirlo a github
+Las dependencias se deben instalar por proyecto. Cuando se trabaja con proyectos descargados de GitHub o se comparten, es esencial ejecutar `npm i` para instalar las dependencias necesarias desde `node_modules`.
 
-- git init 
-    para preparalo a github
+**Preparando un Proyecto de Node.js para GitHub**
 
-- Con mi sesion inciada de github
-    - https://github.com/new
-    - crear un nuevo repo
-    - vamos a seguir los pasos que tienen la web al momento de crear un repo        
-        - git add .
-        - git commit -m "first commit"
-        - git branch -M main
-        - git remote add origin https://github.com/carlosDevf/test-repo.git
-        - git push -u origin main
-            - es posibl que te pida tu token de acceso
-- lo demas cambios pueden ser como la herramieta de VSCode
+Para subir un proyecto a GitHub:
 
+1. Inicializa el repositorio con `git init`.
+2. Crea un nuevo repositorio en GitHub y sigue los pasos proporcionados por la plataforma.
+3. Agrega, haz commit y sube tu proyecto con los comandos de Git proporcionados.
+4. En algunos casos, GitHub solicitará tu token de acceso para completar el proceso.
 
-## Tarea
+### Tarea
 
-- Proyecto uno NODEJ
-- Pryecto dos NPM
-- proyecto de la presentacion
+- **Proyecto uno**: NODEJ
+- **Proyecto dos**: NPM
+- **Presentación del proyecto**: [Google Docs link](https://docs.google.com/presentation/d/18Qg3_Cmw3JZW0W1O5HURcJEfFKKI4fv5k168R9WhilQ/edit?usp=sharing)
 
-https://docs.google.com/presentation/d/18Qg3_Cmw3JZW0W1O5HURcJEfFKKI4fv5k168R9WhilQ/edit?usp=sharing
+### La Extensión de Archivo `.mjs`
 
-----
-# La extensión de archivo MJS
-
-```
-.mjs
-```
-
-se utiliza para denotar módulos de JavaScript que utilizan la sintaxis de importación y exportación de ES6 (ECMAScript 2015) o superior. El propósito de introducir una distinción entre archivos
-
-```
-.js
-```
-
-y
-
-```
-.mjs
-```
-
-fue proporcionar una manera explícita de indicar al entorno de ejecución de Node.js y a los navegadores, así como a los desarrolladores, que el archivo debe tratarse como un módulo ES.
+La extensión `.mjs` se emplea para archivos de JavaScript que utilizan la sintaxis de módulos ES6 (ECMAScript 2015) o superior. Esta distinción busca ofrecer una señal clara al entorno de ejecución y a los desarrolladores de que el archivo se debe tratar como un módulo ES, facilitando así la organización y el manejo de dependencias en aplicaciones modernas.
