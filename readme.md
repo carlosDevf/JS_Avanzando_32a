@@ -67,3 +67,12 @@ simpre que nos comprate nuevas apps o bajo apps de node en git necesito instalar
         - git push -u origin main
             - es posibl que te pida tu token de acceso
 - lo demas cambios pueden ser como la herramieta de VSCode
+
+
+## Tarea
+
+- Proyecto uno NODEJ
+- Pryecto dos NPM
+- proyecto de la presentacion
+
+https://docs.google.com/presentation/d/18Qg3_Cmw3JZW0W1O5HURcJEfFKKI4fv5k168R9WhilQ/edit?usp=sharing
