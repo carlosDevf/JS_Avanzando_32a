@@ -40,5 +40,12 @@ Dentro de package.json cuando instalamos una paquete este lleva su version:
 este caret indica que se debe instalar una version superior si es que la hay
 eliminalo como buena practica para trabajar con versiones absolutas
    
+### instalar dependecias
+
+Estas deben de instalarse por proyecto 
 
 
+### Carpeta node_modules
+
+Tiene las librerias que necesita la aplicacion (proyecto, modulo, app) y se instala con npm i 
+simpre que nos comprate nuevas apps o bajo apps de node en git necesito instalar las dependecias y ocupo npm i 
