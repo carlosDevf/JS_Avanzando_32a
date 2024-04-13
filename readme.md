@@ -49,8 +49,19 @@ Para subir un proyecto a GitHub:
 
 - **Proyecto uno**: NODEJ
 - **Proyecto dos**: NPM
-- **Presentación del proyecto**: [Google Docs link](https://docs.google.com/presentation/d/18Qg3_Cmw3JZW0W1O5HURcJEfFKKI4fv5k168R9WhilQ/edit?usp=sharing)
 
 ### La Extensión de Archivo `.mjs`
 
 La extensión `.mjs` se emplea para archivos de JavaScript que utilizan la sintaxis de módulos ES6 (ECMAScript 2015) o superior. Esta distinción busca ofrecer una señal clara al entorno de ejecución y a los desarrolladores de que el archivo se debe tratar como un módulo ES, facilitando así la organización y el manejo de dependencias en aplicaciones modernas.
+
+
+### Presentaciones
+
+### Introduccion
+
+- [**Que es node**](https://docs.google.com/presentation/d/18Qg3_Cmw3JZW0W1O5HURcJEfFKKI4fv5k168R9WhilQ/edit?usp=sharing)
+
+---- 
+### Estructura de datos
+
+- [**Arreglos**](https://docs.google.com/presentation/d/1n3C26oIA8nNilU_h9e5KL1hcuLysEQ_ZuPVDyvR5bvQ/edit?usp=sharing)
